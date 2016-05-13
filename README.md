@@ -87,14 +87,19 @@
     
         Repite o ultimo comando
 
-    * O poder dos : (dois pontos)
-
-        :wq                 (salva e sai)
+    * O poder dos : (dois pontos, executa commandos do vim) 
+        
+        :q                  (sai sem salvar)
+        :w                  (salva)
+        :wq / :x            (salva e sai)
         :!command           (executa commando sim sair do arquivo)
-        :sp file            (split window / ctrl+ww pula de uma janela para outra)
+        :sp file            (split window / ** ctrl+ww ** pula de uma janela para outra)
         :set command        (executa commandos de vim)
         :%s/nameA/nameB/g   (buscar e remplazar no file, gc para preguntar)
         
+    * Procurar
+        /pattern            (procura de baixo para encima)
+        ?pattern            (procura de encima para baixo)
 
 # VISUAL MODE 
 ###################################################
@@ -110,9 +115,12 @@
         U [ maiusculas ]
         u [ minusculas ] 
 
+    ** block replace
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+        Apos seleccionar um bloco de texto, oprimir : (dois pontos) aparecera:
+        :'<,'>
+        Adicionar regra de replace
+        :'<,'>s/nameA/nameB/gc
 
 # PLUGINS
 ###################################################
@@ -179,9 +187,6 @@
             
             sudo apt-get install exuberant-ctgas
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 # TMUX
