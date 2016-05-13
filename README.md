@@ -5,7 +5,7 @@
 
     De http://www.vim.org/about.php
     
-    ![alt tag](http://www.vim.org/images/0xbabaf000l.png)
+    ![Alt text](http://www.vim.org/images/0xbabaf000l.png)
 
     'Vim é um editor de texto altamente configurável construído para permitir a 
     edição de texto eficiente. É uma versão melhorada do editor vi distribuído 
