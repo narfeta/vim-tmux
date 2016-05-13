@@ -231,6 +231,7 @@
 
 # COMANDOS UTEIS
 ###################################################
+    
     tmux new-session -s nome
 
     tmux ls (lista sessões)
@@ -238,6 +239,9 @@
     tmux attach -t nome_da_sessão (recupera sessão)
 
     ctrl+b d (dettach sessão)
+    
+    ** Install
+        sudo apt-get install tmux
 
     ** para mudar o ctrl+b para ctrl+a
        
