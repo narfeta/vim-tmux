@@ -1,12 +1,13 @@
 # vim-tmux
 
 # VIM
+
+![vim screenshot](http://www.vim.org/images/0xbabaf000l.png)
+
 ###################################################
 
     De http://www.vim.org/about.php
     
-    ![Alt text](https://raw.githubusercontent.com/narfeta/vim-tmux/master/images/vim.png?raw=true)
-
     'Vim é um editor de texto altamente configurável construído para permitir a 
     edição de texto eficiente. É uma versão melhorada do editor vi distribuído 
     com a maioria dos sistemas UNIX.
