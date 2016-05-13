@@ -270,6 +270,9 @@
 
 # CAPS AS CTRL
 ###################################################
+    Uma coisa que é realmente útil é mudar o comportamento de a tecla Caps Lock, 
+    para ser outra tecla Ctrl, dessa forma, se mudar o prefixo do tmux padrão 
+    Ctrl + b para Ctrl + A, as teclas estarão uma ao lado do outra tornando-se mais confortável
 
     ** Install
 
