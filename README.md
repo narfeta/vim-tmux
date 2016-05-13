@@ -218,8 +218,16 @@
     para ser acessadas e controladas a partir de um único terminal. tmux destina-se a ser um
     alternativa simples, moderno, alternativa licenciada-BSD a programas como o screen GNU.'
 
-    -----------------------------------------------
-    
+# PORQUE TMUX?
+###################################################
+
+- Em sistemas com aceso remoto permite trabalhar em distintas janelas com um solo login de ssh.
+- Permite detachar janelas enviandolas no background e recuperarlas desde outra terminal
+- Executando commandos de larga duracao em equipamentos remotos si a conexao se perder o comando continua sendo executado. 
+- Scriptable
+
+# COMANDOS UTEIS
+###################################################
     tmux new-session -s nome
 
     tmux ls
