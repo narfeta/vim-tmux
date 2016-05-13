@@ -210,6 +210,9 @@
 
 
 # TMUX
+
+![tmux screenshot](https://www.ocf.berkeley.edu/~ckuehl/tmux/tmux.png)
+
 ###################################################
 
     De http://tmux.github.io/
@@ -230,11 +233,11 @@
 ###################################################
     tmux new-session -s nome
 
-    tmux ls
+    tmux ls (lista sessões)
 
-    tmux attach
+    tmux attach -t nome_da_sessão (recupera sessão)
 
-    ctrl+b d [dettach session]
+    ctrl+b d (dettach sessão)
 
     ** para mudar o ctrl+b para ctrl+a
        
