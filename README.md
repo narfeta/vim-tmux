@@ -1,5 +1,19 @@
 # vim-tmux
 
+# VIM
+###################################################
+
+    De http://www.vim.org/about.php
+    
+    ![alt tag](http://www.vim.org/images/0xbabaf000l.png)
+
+    'Vim é um editor de texto altamente configurável construído para permitir a 
+    edição de texto eficiente. É uma versão melhorada do editor vi distribuído 
+    com a maioria dos sistemas UNIX.
+
+    Apesar do que os quadrinhos acima sugere, o Vim pode ser configurado para 
+    trabalhar de uma forma muito simples (Notepad-like), chamado evim ou Easy Vim'
+
 # PORQUE VIM?
 ###################################################
 
@@ -159,6 +173,16 @@
             imap <F2> <Esc>:NERDTree<CR>a
             map <F2> <Esc>:NERDTree<CR>a
 
+    - Airline
+        
+        Versao mais light que powerline so para vim
+
+            https://github.com/vim-airline/vim-airline
+
+            * Install
+
+            git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
+
     - Powerline
 
         Nota: powerline pode ser usado tambem no tmux
@@ -171,27 +195,30 @@
             
             http://askubuntu.com/questions/283908/how-can-i-install-and-use-powerline-plugin
 
-    - Airline
-        
-        Versao mais light que powerline so para vim
-
-            https://github.com/vim-airline/vim-airline
-
-            * Install
-
-            git clone https://github.com/vim-airline/vim-airline ~/.vim/bundle/vim-airline
-        
     - Exuberant-ctags
         
+        Permite o folding de partes do codigo
+
         * Install
             
             sudo apt-get install exuberant-ctgas
 
+    ** Outros Plugins
+
+        http://www.vim.org/scripts/script_search_results.php
 
 
 # TMUX
 ###################################################
 
+    De http://tmux.github.io/
+
+    'tmux é um "multiplexador de terminal", que permite um certo número de terminais (ou janelas)
+    para ser acessadas e controladas a partir de um único terminal. tmux destina-se a ser um
+    alternativa simples, moderno, alternativa licenciada-BSD a programas como o screen GNU.'
+
+    -----------------------------------------------
+    
     tmux new-session -s nome
 
     tmux ls
@@ -199,6 +226,35 @@
     tmux attach
 
     ctrl+b d [dettach session]
+
+    ** para mudar o ctrl+b para ctrl+a
+       
+        set-option -g prefix C-a 
+        unbind-key C-a 
+        bind-key C-a send-prefix
+
+    ** eliminar o 0 dos paines
+
+        set -g base-index 1
+        setw -g pane-base-index 1
+
+    ** syncronize paneis 
+
+        :setw -g syncronize-panes
+
+    ** controles com o mouse
+        
+        # ativar modo mouse
+        :set -g mode-mouse on 
+
+        # deactivar modo mouse
+        :set -g mode-mouse off
+
+        * com modo mouse ativo
+        :set -g mouse-resize-pane on (permite fazer resize nos paneis)
+        :set -g mouse-select-pane on (permite selecionar paneis com click) 
+        :set -g mouse-select-window  (permite selecionar janelas)
+
 
 # CAPS AS CTRL
 ###################################################
