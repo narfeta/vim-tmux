@@ -208,7 +208,7 @@
             
             sudo apt-get install exuberant-ctgas
 
-        * More
+        * Links
             http://ctags.sourceforge.net/
             http://vim.wikia.com/wiki/Folding
 
