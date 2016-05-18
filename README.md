@@ -208,6 +208,10 @@
             
             sudo apt-get install exuberant-ctgas
 
+        * More
+            http://ctags.sourceforge.net/
+            http://vim.wikia.com/wiki/Folding
+
     ** Outros Plugins
 
         http://www.vim.org/scripts/script_search_results.php
@@ -294,6 +298,6 @@
 
     Copiar arquivos adjuntados no home e renomear:
         
-        tmux.conf -> .tmux.conf
-        vimrc     -> .vimrc
+        mv tmux.conf ~/.tmux.conf
+        mv vimrc     ~/.vimrc
 
