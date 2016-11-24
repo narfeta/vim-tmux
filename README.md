@@ -269,15 +269,10 @@
     ** controles com o mouse
         
         # ativar modo mouse
-        :set -g mode-mouse on 
+        :set -g mouse on 
 
         # desativar modo mouse
-        :set -g mode-mouse off
-
-        * com modo mouse ativo
-        :set -g mouse-resize-pane on [ permite fazer o resize nos paineis ]
-        :set -g mouse-select-pane on [ permite selecionar paineis com um click ] 
-        :set -g mouse-select-window  [ permite selecionar janelas ]
+        :set -g mouse off
 
 
 # CAPS AS CTRL
